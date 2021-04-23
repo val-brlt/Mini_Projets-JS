@@ -1,0 +1,68 @@
+body {
+    height: 100vh;
+    background-color: rgb(231, 231, 231);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.pic {
+    width: 500px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: 2px solid black;
+    margin: 2px 0 0 4px;
+}
+
+.pics_chevron {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chevron,
+.chevron_play,
+.chevron_pause {
+    transform: scale(5);
+    margin: 0 50px 0 50px;
+    cursor: pointer;
+}
+
+.chevron_play:hover {
+    color: #27ae60;
+}
+
+.chevron_pause:hover {
+    color: #c0392b;
+}
+
+.chevron:hover {
+    color: rgb(145, 145, 145);
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+}
+
+.play_pause {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
+}

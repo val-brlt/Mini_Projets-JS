@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="head">
+        <h1>Galerie Photos</h1>
+    </div>
+
+    <div class="galerie">
+        <div class="pics_chevron">
+            <i class="fas fa-chevron-left chevron" onclick="previous_img()"></i>
+            <div class="pic">
+                <img src="pics/pic1.jpg" class="current" />
+                <img src="pics/pic2.jpg" class="hidden" />
+                <img src="pics/pic3.jpg" class="hidden" />
+                <img src="pics/pic4.jpg" class="hidden" />
+            </div>
+            <i class="fas fa-chevron-right chevron" onclick="next_img()"></i>
+        </div>
+        <div class="play_pause">
+            <i class="fas fa-play chevron_play" onclick="play()"></i>
+            <i class="fas fa-pause chevron_pause " onclick="pause()"></i>
+        </div>
+    </div>
+</body>
+
+
+</html>
+<script type="text/javascript" src="js/galerie_photos.js"></script>
