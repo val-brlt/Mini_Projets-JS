@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(238, 238, 238);
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.topbar {
+    background-color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    padding: 0 60px;
+    font-weight: bold;
+    border-bottom: 1px solid #bababa;
+}
+
+.nav {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    display: flex;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #505050;
+    border-right: 1px solid #bababa;
+}
+
+.nav a:hover {
+    background-color: #EEEEEE;
+}
+
+.txt_elem {
+    /* tester le menu collant avec une scrollbar */
+    height: 100%;
+    width: auto;
+    margin: 40px 10% 40px 10%;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: justify;
+}
+
+.fixed-nav {
+    position: fixed;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+    top: 0;
+}
+
+.logo {
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100px;
+}
