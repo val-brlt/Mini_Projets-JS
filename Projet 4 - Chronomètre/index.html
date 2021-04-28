@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="elems">
+        <h1> Chronomètre </h1>
+
+        <div class="container_chrono">
+            <span class="chrono">
+        <span class="chrono_hour">00</span> :
+            <span class="chrono_min">00</span> :
+            <span class="chrono_sec">00</span> .
+            <span class="chrono_millisec">00</span>
+            </span>
+            <div class="container_button">
+                <button class="button " onclick="start_chrono()"> START </button>
+                <button class="button hidden" onclick="stop_chrono()"> STOP </button>
+                <button class="button hidden" onclick="reset_chrono()"> RESET </button>
+                <button class="button hidden" onclick="save_rst()"> SAVE </button>
+            </div>
+        </div>
+
+        <div class="container_rst hidden">
+            <div class="head">
+                Durée
+            </div>
+            <div class="rst"></div>
+            <div class="footer"><a href="">Sauvegarder dans un fichier</a></div>
+        </div>
+    </div>
+
+
+</body>
+
+
+</html>
+<script type="text/javascript" src="js/chrono.js"></script>
