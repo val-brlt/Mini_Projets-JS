@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset=" UTF-8 ">
+</head>
+
+<body>
+    <div class="calculatrice">
+        <div class="screen">
+            <span class="rst">0</span>
+            <span class="rst_temp">0</span>
+        </div>
+        <div class="btn">
+            <div class="btn_nb">
+                <div class="row">
+                    <button class="item-4" onclick="print_nb(this)"> 7</button>
+                    <button class="item-4" onclick="print_nb(this)"> 8</button>
+                    <button class="item-4" onclick="print_nb(this)"> 9</button>
+                </div>
+                <div class="row">
+                    <button class="item-4" onclick="print_nb(this)"> 4</button>
+                    <button class="item-4" onclick="print_nb(this)"> 5</button>
+                    <button class="item-4" onclick="print_nb(this)"> 6</button>
+                </div>
+                <div class="row">
+                    <button class="item-4" onclick="print_nb(this)"> 1</button>
+                    <button class="item-4" onclick="print_nb(this)"> 2</button>
+                    <button class="item-4" onclick="print_nb(this)"> 3</button>
+                </div>
+                <div class="row">
+                    <button class="item-9" onclick="print_nb(this)"> 0</button>
+                    <button class="item-3" onclick="print_nb(this)"> .</button>
+
+                </div>
+            </div>
+            <div class="btn_calcul">
+                <div class="row">
+                    <button class="item-6 ce" onclick="reset_rst_ce()"> CE</button>
+                    <button class="item-6 c" onclick="reset_rst_c()"> C</button>
+                </div>
+                <div class="row">
+                    <button class="item-6" onclick="calcul(this)"> /</button>
+                    <button class="item-6" onclick="calcul(this)"> *</button>
+                </div>
+                <div class="row">
+                    <button class="item-6" onclick="calcul(this)"> -</button>
+                    <button class="item-6" onclick="calcul(this)"> +</button>
+                </div>
+                <div class="row">
+                    <button class="item-12 equal" onclick="equal()"> =</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script type="text/javascript" src="js/calcul.js"></script>

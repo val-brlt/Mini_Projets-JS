@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_nb {
+    width: 400px;
+    height: 300px;
+}
+
+.btn_calcul {
+    width: 200px;
+    height: 50px;
+}
+
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(139, 139, 139);
+}
+
+.screen {
+    width: 700px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rst {
+    font-size: 50px;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+.rst_temp {
+    font-size: 25px;
+    margin: 10px 0 0 20px;
+}
+
+.calculatrice {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ce {
+    background-color: blue;
+}
+
+.c {
+    background-color: red;
+}
+
+.equal {
+    background-color: green;
+}
+
+
+/* FLEXBOX GRILLE CSS */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-3 {
+    flex-basis: 25%;
+}
+
+.item-4 {
+    flex-basis: 33.33%;
+}
+
+.item-6 {
+    flex-basis: 50%;
+}
+
+.item-9 {
+    flex-basis: 75%;
+}
+
+.item-12 {
+    flex-basis: 100%;
+}
