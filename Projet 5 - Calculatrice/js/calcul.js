@@ -30,15 +30,16 @@ function reset_rst_ce() {
 }
 
 function calcul(signe_btn) {
-    if (rst.innerText.charAt(0) >= 0 && rst.innerText.charAt(0) <= 9)
-        let signe = rst.innerText.charAt(0) // SIGNE DANS LE RST
+    let signe = rst.innerText.charAt(0) // SIGNE DANS LE RST
 
     console.log('taille : ' + rst.innerText.length)
     console.log('rst : ' + rst.innerText)
-    console.log('signe : ' + signe.innerText)
-    if (rst.innerText.length === 1 && rst.innerText.includes(signe)) {
+    console.log('signe : ' + signe)
+    if (rst.innerText.length === 1 && (rst.innerText === '-' || rst.innerText === '-' || rst.innerText === '-' || rst.innerText === '-'))
         alert('Vous avez déjà entré un signe, cliquez sur CE pour annuler votre action')
-    } else {
+    else if (rst.innerText.length === 1 && rst.innerText === '0')
+        alert('Veuillez rentrer un nombre')
+    else {
         if (!(rst.innerText.includes(signe_btn.innerText)) && rst_temp.innerText === '0') {
             rst_temp.innerText = rst.innerText
             rst.innerText = signe_btn.innerText
